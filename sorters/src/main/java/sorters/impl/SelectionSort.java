@@ -15,7 +15,7 @@ public class SelectionSort implements ArraySorter {
 
             for (int j = i + 1; j < comp.length; j++) {
 
-                if (comp[j].compareTo(comp[i]) < 0 && direction == Direction.ASC || comp[j].compareTo(comp[i]) > 0 && direction == Direction.DESC) {
+                if (comp[j].compareTo(comp[i]) < 0 & direction == Direction.ASC || comp[j].compareTo(comp[i]) > 0 & direction == Direction.DESC) {
                     temp = comp[j];
                     comp[j] = comp[i];
                     comp[i] = temp;

@@ -1,5 +1,7 @@
 package objects;
 
+import java.util.Comparator;
+
 public class MyWord implements Comparable<MyWord> {
 
     private final String word;
@@ -41,5 +43,20 @@ public class MyWord implements Comparable<MyWord> {
     @Override
     public String toString() {
         return "" + word;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        MyWord word1 = (MyWord) o;
+
+        return word != null ? word.equals(word1.word) : word1.word == null;
+    }
+
+    @Override
+    public int hashCode() {
+        return word != null ? word.hashCode() : 0;
     }
 }

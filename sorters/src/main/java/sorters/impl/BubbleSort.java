@@ -14,14 +14,14 @@ public class BubbleSort implements ArraySorter {
         do {
             swapped = false;
             for (int i = 1; i < comp.length; i++) {
-                if (comp[i-1].compareTo(comp[i]) > 0 && direction == Direction.ASC || comp[i-1].compareTo(comp[i]) < 0 && direction == Direction.DESC) {
+                if (comp[i-1].compareTo(comp[i]) > 0 & direction == Direction.ASC || comp[i-1].compareTo(comp[i]) < 0 & direction == Direction.DESC) {
                     temp = comp[i-1];
                     comp[i-1] = comp[i];
                     comp[i] = temp;
                     swapped = true;
                 }
             }
-        } while (swapped != false);
+        } while (swapped);
 
         return comp;
     }
