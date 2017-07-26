@@ -11,8 +11,5 @@ public class Main {
 
         test.testConcatStringBuffer();
 
-//        long time = 203350;
-//        System.out.println("method time: " + time / 1000 / 3600 + ":" + time / 1000 / 60 % 60 + ":" + time / 1000 % 60 + ":" + time % 1000);
-
     }
 }
