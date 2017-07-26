@@ -3,13 +3,13 @@ package strings;
 public class Main {
     public static void main(String[] args) {
 
-        StringTester test = new StringTester();
+        StringTester tester = new StringTester();
 
-        test.testConcatString();
+        tester.testConcatString();
 
-        test.testConcatStringBuilder();
+        tester.testConcatStringBuilder();
 
-        test.testConcatStringBuffer();
+        tester.testConcatStringBuffer();
 
     }
 }
